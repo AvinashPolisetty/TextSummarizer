@@ -2,6 +2,7 @@ from src.textsummarizer.pipeline.stage01_data_ingestion import DataIngestionTrai
 from src.textsummarizer.pipeline.stage02_data_validation import DataValidationTrainigPipeline
 from src.textsummarizer.pipeline.stage03_data_transformation import DataTransformationPipeline
 from src.textsummarizer.pipeline.stage04_model_trainer import ModelTrainerTrainingPipeline
+from src.textsummarizer.pipeline.stage05_model_evaluation import ModelEvaluationTrainingPipeline
 from src.textsummarizer.logging import logging
 from exception import CustomException
 import sys
