@@ -3,7 +3,7 @@
 # Workflows
 
 
-## 1.Update the config.yaml
+##### 1.Update the config.yaml
 ## 2.Update the params.yaml
 ## 3.Update the entity
 ## 4.Update the configuration.py in src config
