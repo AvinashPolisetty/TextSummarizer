@@ -9,6 +9,12 @@ class ModelEvaluation:
     def __init__(self,config=ModelEvaluationConfig):
         self.config=config
 
+    def generate_batch_sized_chunks(self,list_of_elements, batch_size):
+        """split the dataset into smaller batches that we can process simultaneously
+        Yield successive batch-sized chunks from list_of_elements."""
+        for i in range(0, len(list_of_elements), batch_size):
+            yield list_of_elements[i : i + batch_size]
+
     def calculate_metric_on_test_ds(self,dataset, metric, model, tokenizer, 
                                batch_size=16, device="cuda" if torch.cuda.is_available() else "cpu", 
                                column_text="article", 
