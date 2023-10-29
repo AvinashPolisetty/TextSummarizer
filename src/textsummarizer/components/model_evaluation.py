@@ -9,7 +9,11 @@ class ModelEvaluation:
     def __init__(self,config=ModelEvaluationConfig):
         self.config=config
 
+<<<<<<< HEAD
     def generate_batch_sized_chunks(self,list_of_elements, batch_size):
+=======
+     def generate_batch_sized_chunks(self,list_of_elements, batch_size):
+>>>>>>> a29ceff364e58eb2d36cfa848c8a4215b036f452
         """split the dataset into smaller batches that we can process simultaneously
         Yield successive batch-sized chunks from list_of_elements."""
         for i in range(0, len(list_of_elements), batch_size):
